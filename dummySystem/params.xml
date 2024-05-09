@@ -1,0 +1,48 @@
+<infra id="dummySys">
+    <context id="processors">
+	<param id="layer1SecondStageLUT" type="vector:uint">0</param>
+	<param id="BackPlaneInputLinkMask" type="vector:uint">1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</param>
+	<param id="OpticalInputLinkMask" type="vector:uint">0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</param>
+	<param id="towerMaskNegEta" type="vector:uint">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</param>
+	<param id="towerMaskPosEta" type="vector:uint">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</param>
+	<param id="ECALLUTPlus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="ECALLUTMinus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HCALLUTPlus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HCALLUTMinus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HFLUTPlus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HFLUTMinus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HCALFBLUTPlus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+        <param id="HCALFBLUTMinus" type="table"><columns>a, b</columns><types>uint, uint</types><rows><row>0, 0</row></rows></param>
+	<param id="millisecToSleep" type="uint">1</param>
+	<param id="tmtCycleConfig" type="uint">1</param>
+	<param id="md5checksum" type="string">external</param>
+	<param id="LUTVerificationPeriodInSeconds" type="float">0</param>
+        <param id="alignBXCicada" type="uint">86</param>
+        <param id="alignSubBXCicada" type="uint">5</param>
+        <param id="allowBadLinks" type="uint">1</param>
+        <param id="alignBX" type="uint">54</param>
+        <param id="alignSubBX" type="uint">5</param>
+        <param id="DAQDelayLineDepth" type="uint">1</param>
+        <param id="runNumber" type="uint">1</param>
+        <param id="cmdDuration" type="uint">1</param>
+        <param cmd="reboot" id="cmdDuration" type="uint">5</param>
+        <param id="returnWarning" type="bool">false</param>
+        <param id="returnError" type="bool">false</param>
+        <param id="throw" type="bool">false</param>
+    </context>
+
+    <context id="">
+        <param id="runcontrol_engage_invoke_malloc_trim" type="bool">true</param>
+        <param id="runcontrol_reset_invoke_malloc_trim" type="bool">true</param>
+    </context>
+
+
+    <!-- AMC13s ... -->
+    <context id="daqttcs">
+        <param id="cmdDuration" type="uint">1</param>
+        <param cmd="reboot" id="cmdDuration" type="uint">8</param>
+        <param id="returnWarning" type="bool">false</param>
+        <param id="returnError" type="bool">false</param>
+        <param id="throw" type="bool">false</param>
+    </context>
+</infra>

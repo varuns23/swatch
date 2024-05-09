@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer1_hw_config>
+        <phi_config phi="0"><board_address>eagle46.lan</board_address></phi_config>
+        <phi_config phi="1"><board_address>eagle39.lan</board_address></phi_config>
+        <phi_config phi="2"><board_address>eagle43.lan</board_address></phi_config>
+        <phi_config phi="3"><board_address>eagle65.lan</board_address></phi_config>
+        <phi_config phi="4"><board_address>eagle54.lan</board_address></phi_config>
+        <phi_config phi="5"><board_address>eagle50.lan</board_address></phi_config>
+        <phi_config phi="6"><board_address>eagle4.lan</board_address></phi_config>
+</layer1_hw_config>
+
