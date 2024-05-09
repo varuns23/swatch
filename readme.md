@@ -37,6 +37,21 @@ ssh paulaner-via-login -L590X:127.0.0.1:590X (Here X is display port, eg. 3)
 vncserver -kill :3
 ```
 
+
+### Some useful Docker commands:
+- List all dockers
+```
+docker ps -a
+```
+- Start and stop the docker:
+```
+docker stop (or start, or rm) <container-ID> (from docker ps -a)
+```
+- Look inside the container using its ID:
+```
+- docker exec -u 0 -it <container-ID> bash
+```
+
 ### First time setup
 ```
 
